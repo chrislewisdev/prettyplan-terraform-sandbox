@@ -4,7 +4,7 @@ This repo contains a set of Terraform infrastructure that is used simply as a pl
 
 It is intended to have enough complexity that you can create plans that cover most Terraform cases (updates/creates/deletes, modules, etc), while also being small enough that you can deploy it into your own AWS account without having to worry about incurring any significant costs.
 
-Currently, it defines a single Lambda + API Gateway integration for a basic "Hello World"-esque API endpoint, but I plan on adding more over time.
+Currently, it defines two API endpoints using API Gateway and Lambda.
 
 ## Building/Deploying
 
