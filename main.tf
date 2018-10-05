@@ -23,11 +23,11 @@ resource "aws_iam_role_policy_attachment" "role_policy_attachment" {
 resource "aws_lambda_function" "function" {
   function_name = "test-go-lambda"
 
-  filename         = "build/begin.zip"
-  source_code_hash = "${base64sha256(file("build/begin.zip"))}"
+  filename         = "build/hello.zip"
+  source_code_hash = "${base64sha256(file("build/hello.zip"))}"
 
   runtime     = "go1.x"
-  handler     = "begin"
+  handler     = "hello"
   role        = "${aws_iam_role.role.arn}"
   memory_size = "128"
   timeout     = "100"
